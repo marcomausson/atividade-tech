@@ -1,54 +1,84 @@
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background-color: #f4f4f9;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-header nav ul {
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .input-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  #task-input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #add-task-btn {
+    padding: 8px 12px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #add-task-btn:hover {
+    background-color: #4cae4c;
+  }
+  
+  #task-list {
     list-style: none;
     padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-section {
-    padding: 20px;
-    margin: 10px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    text-align: center;
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    margin-top: 10px;
-}
-
-.projeto {
-    margin-bottom: 15px;
-}
+    margin: 0;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .task-item button {
+    background: #d9534f;
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .task-item button:hover {
+    background: #c9302c;
+  }
+  
+  .task-item.completed span {
+    text-decoration: line-through;
+    color: #777;
+  }
+  
