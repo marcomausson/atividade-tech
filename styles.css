@@ -1,84 +1,82 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
-  
-  .container {
-    background: #ffffff;
-    padding: 20px;
+    color: #333;
+}
+
+.container {
+    background: #fff;
+    padding: 20px 30px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
     text-align: center;
-  }
-  
-  h1 {
-    font-size: 24px;
-    color: #333;
     margin-bottom: 20px;
-  }
-  
-  .input-section {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
-  #task-input {
-    width: 70%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  #add-task-btn {
-    padding: 8px 12px;
+    color: #4facfe;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #4facfe;
+    outline: none;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+.btn {
+    width: 100%;
+    background: #4facfe;
+    color: #fff;
     border: none;
-    background-color: #5cb85c;
-    color: white;
-    border-radius: 4px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
-  }
-  
-  #add-task-btn:hover {
-    background-color: #4cae4c;
-  }
-  
-  #task-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .task-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .task-item button {
-    background: #d9534f;
-    border: none;
-    color: white;
-    padding: 4px 8px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .task-item button:hover {
-    background: #c9302c;
-  }
-  
-  .task-item.completed span {
-    text-decoration: line-through;
-    color: #777;
-  }
-  
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #00f2fe;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    color: #4facfe;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
