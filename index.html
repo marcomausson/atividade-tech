@@ -1,59 +1,167 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Cadastro</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Site Moderno e Bonito</title>
+    <style>
+        /* Resetando os estilos padrões */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #2c3e50;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #34495e;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 30px;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            font-size: 24px;
+            margin-top: 15px;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #7f8c8d;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #ecf0f1;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Cadastro</h1>
-        <form>
-            <div class="form-group">
-                <label for="nome">Nome Completo</label>
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Bem-vindo ao Meu Site</h1>
+        <p>Design moderno e cheio de estilo!</p>
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Sobre</a>
+        <a href="#">Serviços</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <!-- Seção principal -->
+    <section>
+        <h2>Nossos Serviços</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Serviço 1">
+                <h3>Desenvolvimento Web</h3>
+                <p>Criação de sites e sistemas personalizados para o seu negócio.</p>
             </div>
-            
-            <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Serviço 2">
+                <h3>Design Gráfico</h3>
+                <p>Design criativo para branding, logos e materiais promocionais.</p>
             </div>
-            
-            <div class="form-group">
-                <label for="senha">Senha</label>
-                <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
+            <div class="card">
+                <img src="https://via.placeholder.com/300" alt="Serviço 3">
+                <h3>Consultoria Digital</h3>
+                <p>Estratégias digitais para crescer sua presença online.</p>
             </div>
-            
-            <div class="form-group">
-                <label for="confirma-senha">Confirme sua Senha</label>
-                <input type="password" id="confirma-senha" name="confirma-senha" placeholder="Confirme sua senha" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
-            </div>
-            
-            <div class="form-group">
-                <label for="genero">Gênero</label>
-                <select id="genero" name="genero" required>
-                    <option value="">Selecione</option>
-                    <option value="masculino">Masculino</option>
-                    <option value="feminino">Feminino</option>
-                    <option value="outro">Outro</option>
-                </select>
-            </div>
-            
-            <div class="form-group">
-                <label>
-                    <input type="checkbox" name="termos" required>
-                    Eu aceito os <a href="#">termos e condições</a>.
-                </label>
-            </div>
-            
-            <button type="submit" class="btn">Cadastrar</button>
-        </form>
-    </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+        <p><a href="#">Privacidade</a> | <a href="#">Termos de Uso</a></p>
+    </footer>
+
 </body>
 </html>
