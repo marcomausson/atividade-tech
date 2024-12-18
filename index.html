@@ -21,19 +21,13 @@
         header {
             background-color: #3498db;
             color: white;
-            padding: 40px 20px;
+            padding: 20px;
             text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         header h1 {
             font-size: 36px;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 18px;
-            margin-top: 5px;
         }
 
         nav {
@@ -67,68 +61,26 @@
             display: block;
         }
 
-        .hero {
-            text-align: center;
-            padding: 50px 20px;
-            background-color: #ecf0f1;
-        }
-
-        .hero img {
-            width: 100%;
-            max-width: 600px;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-
-        .features {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .feature {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            text-align: center;
-        }
-
-        .feature img {
-            width: 80px;
-            height: 80px;
-            margin-bottom: 15px;
-        }
-
-        .feature h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        .feature p {
-            font-size: 16px;
-            color: #7f8c8d;
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #34495e;
         }
 
         .card-container {
             display: flex;
             justify-content: center;
             gap: 30px;
-            flex-wrap: wrap;
             margin-top: 30px;
         }
 
         .card {
             background-color: #fff;
-            padding: 20px;
+            padding: 30px;
             width: 300px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-align: center;
         }
 
         .card:hover {
@@ -152,35 +104,6 @@
             font-size: 16px;
             color: #7f8c8d;
             margin-top: 10px;
-        }
-
-        .contact-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            margin-top: 30px;
-        }
-
-        .contact-item {
-            background-color: #ecf0f1;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            width: 100%;
-            max-width: 500px;
-        }
-
-        .contact-item img {
-            width: 50px;
-            height: 50px;
-            margin-bottom: 10px;
-        }
-
-        .contact-item h3 {
-            font-size: 20px;
-            margin-bottom: 5px;
         }
 
         footer {
@@ -207,7 +130,7 @@
     <!-- Cabeçalho -->
     <header>
         <h1>Bem-vindo ao Site Mausson</h1>
-        <p>Transformamos suas ideias em soluções digitais incríveis!</p>
+        <p>Design moderno e cheio de estilo! Empresa Mausson!</p>
     </header>
 
     <!-- Menu de navegação -->
@@ -218,86 +141,60 @@
         <a onclick="showSection('contact')">Contato</a>
     </nav>
 
-    <!-- Seção Home -->
+    <!-- Seções -->
     <section id="home" class="active">
-        <div class="hero">
-            <h2>Seu parceiro em soluções digitais</h2>
-            <p>Com anos de experiência no mercado, somos especialistas em criar projetos que conectam pessoas e empresas.</p>
-            <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_960_720.jpg" alt="Hero Image">
-        </div>
-        <div class="features">
-            <div class="feature">
-                <img src="https://cdn-icons-png.flaticon.com/512/4778/4778477.png" alt="Solução Inovadora">
-                <h3>Soluções Inovadoras</h3>
-                <p>Projetos personalizados para atender às necessidades do seu negócio.</p>
-            </div>
-            <div class="feature">
-                <img src="https://cdn-icons-png.flaticon.com/512/4211/4211708.png" alt="Alta Qualidade">
-                <h3>Alta Qualidade</h3>
-                <p>Utilizamos as melhores práticas e tecnologias para garantir resultados de excelência.</p>
-            </div>
-            <div class="feature">
-                <img src="https://cdn-icons-png.flaticon.com/512/4340/4340217.png" alt="Suporte Dedicado">
-                <h3>Suporte Dedicado</h3>
-                <p>Estamos aqui para ajudar em todas as etapas do seu projeto.</p>
-            </div>
-        </div>
+        <h2>Bem-vindo à Home</h2>
+        <p>Esta é a página inicial do nosso site.</p>
     </section>
 
-    <!-- Seção Sobre -->
     <section id="about">
         <h2>Sobre Nós</h2>
-        <p>Somos uma empresa dedicada à inovação e excelência em soluções digitais. Desde nossa fundação, temos ajudado empresas a transformarem suas ideias em realidade, utilizando tecnologias modernas e estratégias eficazes.</p>
-        <div class="features">
-            <div class="feature">
-                <img src="https://cdn-icons-png.flaticon.com/512/1233/1233821.png" alt="Missão">
-                <h3>Nossa Missão</h3>
-                <p>Prover soluções digitais de qualidade que ajudem nossos clientes a alcançar seus objetivos de forma eficiente e criativa.</p>
-            </div>
-            <div class="feature">
-                <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Visão">
-                <h3>Visão</h3>
-                <p>Ser referência no mercado digital, reconhecida pela inovação e excelência em nossos projetos.</p>
-            </div>
-            <div class="feature">
-                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Valores">
-                <h3>Valores</h3>
-                <p>Compromisso, ética, criatividade e respeito são os pilares que guiam nosso trabalho.</p>
-            </div>
-        </div>
-        <img src="https://cdn.pixabay.com/photo/2017/08/10/03/47/business-2610957_960_720.jpg" alt="Equipe" style="margin-top: 30px; width: 100%; max-width: 800px; border-radius: 10px;">
+        <p>Informações sobre nossa empresa e história.</p>
     </section>
 
-    <!-- Seção Serviços -->
     <section id="services">
         <h2>Nossos Serviços</h2>
         <div class="card-container">
             <div class="card">
-                <img src="https://www.informamais.com.br/Painel/Uploads/32303139309eca3130323036f03f34383030357103373635ec9aMiniatura.jpg" alt="Desenvolvimento Web">
+                <img src="https://www.informamais.com.br/Painel/Uploads/32303139309eca3130323036f03f34383030357103373635ec9aMiniatura.jpg" alt="Serviço 1">
                 <h3>Desenvolvimento Web</h3>
-                <p>Criação de sites e sistemas personalizados para o seu negócio, garantindo uma presença digital forte e única.</p>
+                <p>Criação de sites e sistemas personalizados para o seu negócio.</p>
             </div>
             <div class="card">
-                <img src="https://cdn.pixabay.com/photo/2015/01/21/14/14/apple-606761_960_720.jpg" alt="Marketing Digital">
-                <h3>Marketing Digital</h3>
-                <p>Campanhas de marketing otimizadas para alavancar sua marca e engajar clientes potenciais.</p>
-            </div>
-            <div class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuMu3C93aCbkxFZoFH--HnKRusg0v7D_zskw&s" alt="Design Gráfico">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuMu3C93aCbkxFZoFH--HnKRusg0v7D_zskw&s" alt="Serviço 2">
                 <h3>Design Gráfico</h3>
-                <p>Design criativo e profissional para materiais promocionais, branding e logos que destacam sua empresa.</p>
+                <p>Design criativo para branding, logos e materiais promocionais.</p>
             </div>
             <div class="card">
-                <img src="https://cdn.pixabay.com/photo/2020/12/10/14/52/network-5811315_960_720.jpg" alt="Consultoria Digital">
+                <img src="https://blogdopco.com.br/wp-content/uploads/2024/02/Jair-Bolsonaro-6-300x300.jpg" alt="Serviço 3">
                 <h3>Consultoria Digital</h3>
-                <p>Estratégias digitais eficazes para aumentar sua visibilidade e crescimento online.</p>
+                <p>Estratégias digitais para crescer sua presença online.</p>
             </div>
         </div>
     </section>
 
-    <!-- Seção Contato -->
     <section id="contact">
         <h2>Contato</h2>
-        <p>Entre em contato conosco! Estamos prontos para ajudar em seu próximo projeto.</p>
-        <div class="contact-container">
-            <div class="
+        <p>Entre em contato conosco através dos nossos canais.</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+        <p><a href="#">Privacidade</a> | <a href="#">Termos de Uso</a></p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Oculta todas as seções
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            // Mostra a seção selecionada
+            const targetSection = document.getElementById(sectionId);
+            targetSection.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
