@@ -42,6 +42,7 @@
             margin: 0 15px;
             font-size: 18px;
             transition: color 0.3s ease;
+            cursor: pointer;
         }
 
         nav a:hover {
@@ -49,10 +50,15 @@
         }
 
         section {
+            display: none;
             padding: 50px 20px;
             max-width: 1200px;
             margin: auto;
             text-align: center;
+        }
+
+        section.active {
+            display: block;
         }
 
         section h2 {
@@ -129,14 +135,24 @@
 
     <!-- Menu de navegação -->
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Sobre</a>
-        <a href="#">Serviços</a>
-        <a href="#">Contato</a>
+        <a onclick="showSection('home')">Home</a>
+        <a onclick="showSection('about')">Sobre</a>
+        <a onclick="showSection('services')">Serviços</a>
+        <a onclick="showSection('contact')">Contato</a>
     </nav>
 
-    <!-- Seção principal -->
-    <section>
+    <!-- Seções -->
+    <section id="home" class="active">
+        <h2>Bem-vindo à Home</h2>
+        <p>Esta é a página inicial do nosso site.</p>
+    </section>
+
+    <section id="about">
+        <h2>Sobre Nós</h2>
+        <p>Informações sobre nossa empresa e história.</p>
+    </section>
+
+    <section id="services">
         <h2>Nossos Serviços</h2>
         <div class="card-container">
             <div class="card">
@@ -157,11 +173,29 @@
         </div>
     </section>
 
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco através dos nossos canais.</p>
+    </section>
+
     <!-- Rodapé -->
     <footer>
         <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
         <p><a href="#">Privacidade</a> | <a href="#">Termos de Uso</a></p>
     </footer>
 
+    <script>
+        function showSection(sectionId) {
+            // Oculta todas as seções
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            // Mostra a seção selecionada
+            const targetSection = document.getElementById(sectionId);
+            targetSection.classList.add('active');
+        }
+    </script>
+
 </body>
 </html>
+
